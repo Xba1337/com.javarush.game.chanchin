@@ -1,4 +1,4 @@
-package com.javarush.game.chanchin.game.controller;
+package controller;
 
 import jakarta.servlet.ServletException;
 

@@ -1,19 +1,21 @@
-package com.javarush.game.chanchin.game.controller;
+package controller;
 
 
-import com.javarush.game.chanchin.game.entity.*;
-import com.javarush.game.chanchin.game.util.Counter;
+import entity.*;
+import util.AnswersContainer;
+import util.Counter;
+import config.Statements;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import util.Prologue;
+import util.QuestionsContainer;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.javarush.game.chanchin.game.config.Statements.*;
 
 @WebServlet(name = "FirstQuestionServlet", value = "/first")
 public class StartServlet extends HttpServlet {
@@ -37,25 +39,25 @@ public class StartServlet extends HttpServlet {
             convertedQuestionID = convertFromAnswToQuestID(gottenID);
             remainder = convertToSingleDigit(gottenID);
 
-            if (Integer.parseInt(request.getParameter("id")) == PROLOGUE) {
-                gottenID = POSITIVE_ANSWER;
+            if (Integer.parseInt(request.getParameter("id")) == Statements.PROLOGUE) {
+                gottenID = Statements.POSITIVE_ANSWER;
                 convertedQuestionID = convertFromAnswToQuestID(gottenID);
                 remainder = convertToSingleDigit(gottenID);
             }
 
         } else {
-            gottenID = PROLOGUE;
-            remainder = PROLOGUE;
+            gottenID = Statements.PROLOGUE;
+            remainder = Statements.PROLOGUE;
         }
 
         switch (remainder) {
-            case PROLOGUE: {
+            case Statements.PROLOGUE: {
                 String prologueText = prologue.getPrologueText();
                 request.setAttribute("questionID", gottenID);
                 request.setAttribute("questionText", prologueText);
             }
             break;
-            case POSITIVE_ANSWER: {
+            case Statements.POSITIVE_ANSWER: {
                 Integer questionID = questions.get(convertedQuestionID)
                                               .getId();
                 String questionText = questions.get(convertedQuestionID)
@@ -73,8 +75,8 @@ public class StartServlet extends HttpServlet {
             }
             break;
 
-            case NEGATIVE_ANSWER: {
-                Integer loseID = LOSE;
+            case Statements.NEGATIVE_ANSWER: {
+                Integer loseID = Statements.LOSE;
                 String loseText;
                 if (convertedQuestionID == 1) {
                     loseText = "На кефире? Серьезно? Пересмотри свою жизненную позицию и попробуй заново";
@@ -102,7 +104,7 @@ public class StartServlet extends HttpServlet {
                 }
             }
         }
-        if (remainder == NEGATIVE_ANSWER) {
+        if (remainder == Statements.NEGATIVE_ANSWER) {
             Counter.addLoses();
         }
         int numberOfLoses = Counter.getLoses();

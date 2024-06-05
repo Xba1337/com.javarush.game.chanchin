@@ -1,5 +1,5 @@
-import com.javarush.game.chanchin.game.entity.Answer;
-import com.javarush.game.chanchin.game.entity.AnswersContainer;
+import entity.Answer;
+import util.AnswersContainer;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

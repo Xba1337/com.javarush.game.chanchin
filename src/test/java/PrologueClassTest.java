@@ -1,10 +1,5 @@
-import com.javarush.game.chanchin.game.entity.Answer;
-import com.javarush.game.chanchin.game.entity.AnswersContainer;
-import com.javarush.game.chanchin.game.entity.Prologue;
+import util.Prologue;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalToIgnoringWhiteSpace;

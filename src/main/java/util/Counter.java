@@ -1,4 +1,4 @@
-package com.javarush.game.chanchin.game.util;
+package util;
 
 public class Counter {
 

@@ -1,4 +1,4 @@
-package com.javarush.game.chanchin.game.entity;
+package util;
 
 
 import lombok.Data;
@@ -22,7 +22,7 @@ public class Prologue {
         if (instance == null) {
             instance = new Prologue();
             prologueText = fillPrologue("C:\\Games\\master\\com.javarush.game.chanchin\\" +
-                    "src\\main\\java\\com\\javarush\\game\\chanchin\\game\\resources\\prologue.txt");
+                    "src\\main\\resources\\prologue.txt");
         }
         return instance;
     }

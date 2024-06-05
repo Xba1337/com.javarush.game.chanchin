@@ -1,5 +1,6 @@
-package com.javarush.game.chanchin.game.entity;
+package util;
 
+import entity.Question;
 import lombok.Data;
 import org.apache.commons.lang3.StringUtils;
 
@@ -24,7 +25,7 @@ public class QuestionsContainer {
         if (instance == null) {
             instance = new QuestionsContainer();
             questions = fillQuestionsList("C:\\Games\\master\\com.javarush.game.chanchin\\" +
-                    "src\\main\\java\\com\\javarush\\game\\chanchin\\game\\resources\\sceneryQuestions.txt");
+                    "src\\main\\resources\\sceneryQuestions.txt");
         }
         return instance;
     }

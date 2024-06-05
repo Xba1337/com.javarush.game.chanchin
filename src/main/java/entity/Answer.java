@@ -1,4 +1,4 @@
-package com.javarush.game.chanchin.game.entity;
+package entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

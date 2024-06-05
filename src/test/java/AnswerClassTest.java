@@ -1,4 +1,4 @@
-import com.javarush.game.chanchin.game.entity.Answer;
+import entity.Answer;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

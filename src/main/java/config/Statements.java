@@ -1,4 +1,4 @@
-package com.javarush.game.chanchin.game.config;
+package config;
 
 
 public class Statements {
