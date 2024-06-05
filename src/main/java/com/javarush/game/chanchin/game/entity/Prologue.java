@@ -21,16 +21,16 @@ public class Prologue {
     public static Prologue getInstance() {
         if (instance == null) {
             instance = new Prologue();
-            prologueText = fillPrologue();
+            prologueText = fillPrologue("C:\\Games\\master\\com.javarush.game.chanchin\\" +
+                    "src\\main\\java\\com\\javarush\\game\\chanchin\\game\\resources\\prologue.txt");
         }
         return instance;
     }
 
-    public static String fillPrologue() {
+    public static String fillPrologue(String path) {
         String fileContent = "";
         try {
-            fileContent = Files.readString(Path.of("C:\\Games\\master\\com.javarush.game.chanchin\\" +
-                    "src\\main\\java\\com\\javarush\\game\\chanchin\\game\\prologue.txt"));
+            fileContent = Files.readString(Path.of(path));
         } catch (IOException e) {
             System.out.println("Файл не найден");
         }

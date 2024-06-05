@@ -22,7 +22,8 @@ public class AnswersContainer {
     public static AnswersContainer getInstance() {
         if (instance == null) {
             instance = new AnswersContainer();
-            answers = fillAnswersList("C:\\Games\\master\\com.javarush.game.chanchin\\src\\main\\java\\com\\javarush\\game\\chanchin\\game\\scenaryAnswers.txt");
+            answers = fillAnswersList("C:\\Games\\master\\com.javarush.game.chanchin\\" +
+                    "src\\main\\java\\com\\javarush\\game\\chanchin\\game\\resources\\scenaryAnswers.txt");
         }
         return instance;
     }

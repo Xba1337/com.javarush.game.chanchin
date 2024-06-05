@@ -55,3 +55,13 @@ t
 Dsrc/main/java/com/javarush/game/chanchin/game/config/Statements.java,d\3\d3e07e30fc00d44a6ae5a6936c6e75a4e34b9143
 o
 ?src/main/java/com/javarush/game/chanchin/game/util/Counter.java,6\e\6ea2c67d9ba6c52bff1c11212959b782161cd90a
+z
+Jsrc/main/java/com/javarush/game/chanchin/game/resources/scenaryAnswers.txt,1\7\178d0c17758a1728a8abd0c5e08ab66eaaec6a6b
+|
+Lsrc/main/java/com/javarush/game/chanchin/game/resources/sceneryQuestions.txt,7\5\75274a180affec014798d3f6c73d037870a29f15
+t
+Dsrc/main/java/com/javarush/game/chanchin/game/resources/prologue.txt,2\7\272ad6420b63d0d22d945fc326d8aa80858a12c3
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
