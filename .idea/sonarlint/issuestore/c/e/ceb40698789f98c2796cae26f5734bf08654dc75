@@ -1,0 +1,24 @@
+
+h
+java:S11926"KDefine a constant instead of duplicating this literal "questionID" 6 times.(šï×²8À×ŒÁş1
+o
+java:S11927"MDefine a constant instead of duplicating this literal "questionText" 6 times.(›³³øÿÿÿÿ8À×ŒÁş1
+t
+java:S3776 "RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Ïû©Öûÿÿÿÿ8Ì×ŒÁş1
+X
+java:S2696$"6Make the enclosing method "static" or remove this set.(”®Ãÿÿÿÿÿ8°ÔáÁş1
+S
+java:S2696%"6Make the enclosing method "static" or remove this set.(Ã¯…Å8°ÔáÁş1
+X
+java:S2696&"6Make the enclosing method "static" or remove this set.(ö†ì’øÿÿÿÿ8°ÔáÁş1
+X
+java:S2696)"6Make the enclosing method "static" or remove this set.(şÜöüÿÿÿÿ8±ÔáÁş1
+S
+java:S2696*"6Make the enclosing method "static" or remove this set.(Ã¯…Å8±ÔáÁş1
+X
+java:S2696+"6Make the enclosing method "static" or remove this set.(ö†ì’øÿÿÿÿ8²ÔáÁş1
+X
+java:S2696/"6Make the enclosing method "static" or remove this set.(÷ÛÓ‰ûÿÿÿÿ8²ÔáÁş1
+X
+java:S26960"6Make the enclosing method "static" or remove this set.(íÜ‚±ıÿÿÿÿ8²ÔáÁş1
+>	java:S1313""Add a default case to this switch.(æà¤ä8²ÔáÁş1
